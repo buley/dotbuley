@@ -102,4 +102,15 @@ source $ZSH/oh-my-zsh.sh
 
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"  
-~                                        
+
+# Git commands
+git config --global alias.hawk '!f() { git add . && git commit -m "$1"; }; f'
+git config --global alias.tuah 'push'
+
+# Git Aliases
+alias hawk='git add . && git commit -m'  # Usage: hawk "Your commit message"
+alias tuah='git push'                    # Usage: tuah
+
+# Combined Alias
+alias hawktuah='git add . && git commit -m "Auto commit" && git push'
+
