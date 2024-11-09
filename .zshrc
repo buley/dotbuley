@@ -112,5 +112,5 @@ alias hawk='git add . && git commit -m'  # Usage: hawk "Your commit message"
 alias tuah='git push'                    # Usage: tuah
 
 # Combined Alias
-alias hawktuah='git add . && git commit -m "Auto commit" && git push'
+alias hawktuah='git add . && git commit -m "💦" && git push'
 
